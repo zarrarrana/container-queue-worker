@@ -30,7 +30,9 @@ libraryDependencies ++= Seq(
   "org.scalatest" %% "scalatest" % "3.0.5" % "test",
   "com.typesafe.akka" %% "akka-http"   % "10.1.1",
   "com.typesafe.akka" %% "akka-stream" % "2.5.11",
-  "com.google.code.gson" % "gson" % "2.8.5"
+  "com.google.code.gson" % "gson" % "2.8.5",
+  "com.amazonaws" % "aws-java-sdk-sqs" % "1.11.676",
+  "com.amazonaws" % "aws-java-sdk-sts" % "1.11.676"
 )
 
 mainClass in Compile := Some("com.queueworker.WorkerQueueApp")
